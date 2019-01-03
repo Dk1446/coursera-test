@@ -1,0 +1,41 @@
+body {
+  /*background-color: #37474f;*/
+  animation: colorchange 4s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 5s infinite;  /* Chrome and Safari */
+
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: #f44336;}
+      25%  {background: #673ab7;}
+      50%  {background: #03a9f4;}
+      75%  {background: #4caf50;}
+      100% {background: #ffeb3b;}
+    }
+
+    @-webkit-keyframes colorchange/* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: #f44336;}
+      25%  {background: #673ab7;}
+      50%  {background: #03a9f4;}
+      75%  {background: #4caf50;}
+      100% {background: #ffeb3b;}
+}
+
+h1 {
+  font-family: "Bookman Old Style";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  font-size: 25px;
+  color: white;
+  /*text-shadow: 1px 0px white;*/
+  text-align: center;
+  text-indent: 100px;
+  shadow:rgba(0,0,0,.8) .5em .5em 4em;
+  position: relative;
+  top: 280px;
+}
